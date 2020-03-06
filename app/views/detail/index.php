@@ -13,7 +13,7 @@
 
 
     <?php if( $buku['status_buku'] == 'pro' && empty($_SESSION['username']) ) :?>
-    <a class="btn btn-danger btn-baca-login" href="<?= BASEURL;?>/daftarlogin" role="button" onclick="alert('harap login dahulu')">HARAP LOGIN</a>
+    <a class="btn btn-danger btn-baca-login" href="<?= BASEURL;?>/daftarlogin/login.php" role="button" onclick="alert('harap login dahulu')">HARAP LOGIN</a>
     <?php else :?>
       <a class="btn btn-success btn-baca" href="baca/<?= $buku['id_buku'];?>" role="button">MULAI BACA</a>
       <a class="btn btn-danger btn-baca-login ml-5" href="<?= BASEURL;?>" role="button">back to home</a>

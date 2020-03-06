@@ -10,7 +10,7 @@ class Home_model {
         return $this->db->resultSet();
     }
     public function ambilProBooks() {
-        $this->db->query("SELECT * FROM `buku` WHERE status_buku = 'pro' ");
+        $this->db->query("SELECT * FROM `buku` WHERE status_buku = 'pro' ORDER BY id_buku ASC ");
         return $this->db->resultSet();
     }
 
@@ -30,7 +30,7 @@ class Home_model {
     }
 
     public function ambilAllBooks() {
-        $this->db->query("SELECT * FROM `buku`");
+        $this->db->query("SELECT * FROM `buku` ORDER BY id_buku ASC");
         return $this->db->resultSet();
     }
 }

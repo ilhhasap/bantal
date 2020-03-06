@@ -28,7 +28,7 @@ html {
     border: none;
     border-radius: 50px;
     background-image: 
-    linear-gradient(to top, #9198a5 -20%, #fbc8d4 100%);
+    linear-gradient(to top, #9e9e9e -20%, #fbc8d4 100%);
     color: white;
     font-weight: bold;
     transition: .4s;
@@ -105,7 +105,7 @@ html {
     height: 55px;
     font-family: 'Montserrat';
     font-weight: bold;
-    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 95%, #fad0c4 100%);
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #ff9a9e 95%, #fad0c4 100%);
     border: none;
     border-radius: 50px;
     color: rgb(240, 239, 239);
@@ -206,6 +206,7 @@ html {
     color: black;
 }
 .iklan-buku .card {
+    height: 670px;
     border-radius: 10px 10px;
     box-shadow: 2px 2px 5px rgb(223, 223, 223);
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
@@ -222,7 +223,7 @@ html {
     margin-top: -10px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 20px;
     color: rgb(212, 98, 85);
 }
 .iklan-buku .card-judul {

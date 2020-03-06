@@ -13,7 +13,7 @@ $ambilRow3 = mysqli_num_rows($result3);
 $query = "SELECT * FROM `buku` WHERE kategori_buku = 'sejarah'";
 $result4 = mysqli_query($conn, $query);
 $ambilRow4 = mysqli_num_rows($result4);
-$query = "SELECT * FROM `buku` WHERE kategori_buku = 'komik'";
+$query = "SELECT * FROM `buku` WHERE kategori_buku = 'edukasi'";
 $result5 = mysqli_query($conn, $query);
 $ambilRow5 = mysqli_num_rows($result5);
 ?>
@@ -32,9 +32,7 @@ $ambilRow5 = mysqli_num_rows($result5);
                     <?= $_SESSION['username'];?></span>
             </h3>
             <?php endif; ?>
-            <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
-                fuga illo doloribus debitis, unde eius dolores fugit optio officia, assumenda
-                sequi tempora neque voluptatibus. Accusamus obcaecati</p>
+            <p class="desc">Ini merupakan website bacaan buku yang Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae quam, iure debitis officia</p>
             <!-- <a href="#iklan-menu"><button class="tombol">run</button></a> -->
 
             <form action="<?= BASEURL;?>/catalogBuku" method="POST">
@@ -45,7 +43,7 @@ $ambilRow5 = mysqli_num_rows($result5);
                     aria-describedby="button-addon2"
                     name="cari">
 
-                <button type="submit" class="btn btn-light btn-lg btn-block search mt-3">search</button>
+                <button type="submit" class="btn btn-danger btn-lg btn-block search mt-3">search</button>
                 <!-- <input class="btn btn-danger search" type="button" value="CARI"> -->
             </form>
         </div>
@@ -81,7 +79,7 @@ $ambilRow5 = mysqli_num_rows($result5);
 </div>
 
 <div class="card float-left text-center all-genre" style="width: 14rem;">
-    <a href="<?= BASEURL;?>/catalogBuku">
+    <a href="<?= BASEURL;?>/allBooks">   
         <img
             class="card-img-top"
             src="<?= BASEURL;?>/img/premium.png"
@@ -114,11 +112,11 @@ $ambilRow5 = mysqli_num_rows($result5);
     <a href="">
         <img
             class="card-img-top"
-            src="<?= BASEURL;?>/img/komik.png"
+            src="<?= BASEURL;?>/img/edukasi.png"
             alt="Card image cap"
             width="10">
         <div class="card-body text-center">
-            <p class="card-text">komik</p>
+            <p class="card-text">edukasi</p>
             <small><?= $ambilRow5;?>
                 buku</small>
         </div>
@@ -134,7 +132,7 @@ $ambilRow5 = mysqli_num_rows($result5);
 
     <div class="row float-left">
         <?php foreach( $data['ambilFreeBooks'] as $buku ) : ?>
-        <div class="col-md">
+        <div class="col-md ml-3">
             <!-- Pertama -->
             <div class="card text-center mt-4" style="width: 320px;">
                 <a href="./detail/<?= $buku['id_buku'];?>" class="link-detail">
@@ -159,14 +157,15 @@ $ambilRow5 = mysqli_num_rows($result5);
         <?php endforeach;?>
     </div>
     <div class="clear"></div>
-    <br><br><br>
+    <br><br><br><br><br>
+    <br><hr class="my-4"><br><br>
 
-    <h1 class="mb-5">Premium Books
-        <img class="mb-2" src="<?= BASEURL;?>/img/free.png" alt="" width="40"></h1>
+    <h1 class="mb-3">Premium Books
+        <img class="mb-2" src="<?= BASEURL;?>/img/premium.png" alt="" width="40"></h1>
 
     <div class="row float-left">
         <?php foreach( $data['ambilProBooks'] as $buku ) : ?>
-        <div class="col-md">
+        <div class="col-md mt-5">
             <!-- Pertama -->
             <div class="card text-center mt-4" style="width: 320px;">
                 <a href="<?= BASEURL;?>/detail/<?= $buku['id_buku'];?>" class="link-detail">
