@@ -98,6 +98,10 @@ require "function.php";
 							<a href="login.php" class="txt2">
 								Login
 							</a>
+							<br>
+							<a href="../" class="txt2">
+								Kembali ke Home
+							</a>
 						</li>
 					</ul>
 				</form>

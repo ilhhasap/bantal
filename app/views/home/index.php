@@ -157,7 +157,7 @@ $ambilRow5 = mysqli_num_rows($result5);
         <?php endforeach;?>
     </div>
     <div class="clear"></div>
-    <br><br><br><br><br>
+    <br><br>
     <br><hr class="my-4"><br><br>
 
     <h1 class="mb-3">Premium Books

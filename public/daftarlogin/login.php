@@ -61,8 +61,6 @@ require 'function.php';
 	<link rel="stylesheet" type="text/css" href="../vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="../vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../css/util.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
@@ -101,6 +99,10 @@ require 'function.php';
 
 							<a href="./index.php" class="txt2">
 								Sign up
+							</a>
+							<br>
+							<a href="../" class="txt2">
+								Kembali ke Home
 							</a>
 						</li>
 					</ul>
